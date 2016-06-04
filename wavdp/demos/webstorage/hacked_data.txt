@@ -1,0 +1,13 @@
+Google Nexus : $500,  Micromax : $100,  Moto G : $200,  Nokia Lumia : $400,  Samasung Galaxy S5 : $800,
+
+
+
+<button type="submit" class="btn item btn-default" name="mobile" >
+		<span class="span_left"> i
+			</span>
+			<span class="span_right"> localStorage.getItem(i)
+			</span>  
+
+			</button>
+
+			<button type='submit' class='btn item btn-default' name='mobile' ><span class='span_left'>" + i + "</span><span class='span_right'>"+ localStorage.getItem(i)+"	</span>  	</button>     

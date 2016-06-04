@@ -1,0 +1,1 @@
+<iframe id="accountno" frameborder="1" name="accountno" width="100" height="200" src="bank2.php#accno" style="opacity:0.4; overflow:hidden; position:absolute; left:60px; top:25px; z-index:1;" scrolling="no" ></iframe>
